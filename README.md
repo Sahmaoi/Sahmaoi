@@ -1,80 +1,32 @@
-# Hi, this is Sahmaoi 👋
+# Sahmaoi
 
-**Robotics Engineer · SaaS Tinkerer · Fuecoco Appreciator 🔥🧠**
+Robotics engineer, software builder, turtle enthusiast. I run [VTEC](https://vtec-jo.com) (Venture Tech Engineering Consultancy LLC) and build products for small businesses, in English and Arabic.
 
-I build systems that ship posts, not just pixels — and I will absolutely choose the fire croc starter every time.
+My engineering philosophy is borrowed from turtles: move steadily, carry your armour with you, and outlive the people who rushed.
 
----
+## Building
 
-## About Me
+- **OrbitBook** ([orbit-book.com](https://orbit-book.com)): appointment booking for service businesses. Customers book from a public page with no account; owners run branches, staff, hours and bookings from one dashboard. Full Arabic with right-to-left layout. Phase 2 (branches, roles, an admin console) ships soon.
+- **Delta-V**: VTEC's project cost tracker. Plans a project's budget up front and tracks what it actually spends, the way a mission plans its delta-v. It retired a spreadsheet that had seen things. Next.js, Drizzle and Postgres, self-hosted in Docker.
 
-- Robotics engineer + sales manager who likes turning chaos into dashboards and automations.
-- Half my brain is control systems and database schemas, the other half is “how do we make this fun to use?”
-- I enjoy:
-  - Designing social media tools that don’t feel like punishment.
-  - Wiring up automations so humans don’t have to click the same button 500 times.
-  - Over‑thinking starter choices in Pokémon (Fuecoco supremacy).
+## Agent orchestration
 
----
+I don't prompt one AI. I run a team of them, and none of them gets to merge without passing review.
 
-## What I’m Working On
+- **19 specialist agents**: implementers, a code reviewer, a security auditor, a scale-breaker whose whole job is to attack every change, a threat modeller, release and supply-chain checks, and one reviewer that exists purely to reject anything that sounds like a robot wrote it.
+- **The shell**: git hooks that refuse a commit the scale-breaker hasn't cleared, and scan every commit for secrets. Nobody gets past them, me included.
+- **A shared second brain**: every solved problem gets written down, and every agent reads it before starting, so the same mistake never costs twice.
+- **Claude Code mods**: a live task board, a signal that pings me when an agent needs a human, and a cap on how many agents run at once, because ten agents in parallel is just chaos with better PR.
 
-- **SMMS** – a multi‑tenant social media management SaaS for agencies  
-  Scheduling, approvals, analytics, notifications — basically a command center for people who live in DMs and content calendars.
+## How I build
 
-- **Automation & Agents**  
-  Small agents that do the boring bits: drafting content, sorting leads, generating reports, and nagging you less than your PM.
+Control systems taught me to design for failure first: a retry that never double-books, data that gets deleted when the policy says it does, an alert that fires once instead of fifty times.
 
-- **Vibe‑Coding Experiments**  
-  Building products with AI inside VS Code: big “mega prompts”, small cleanups, and trying not to let the agents reorganize everything at 3am.
+## Stack
 
----
+Next.js · TypeScript · React · Supabase (Postgres, row-level security, Edge Functions) · Drizzle · Cloudflare Workers · Docker · Python · Claude Code
 
-## Tools & Stack
+## Off the clock
 
-**Product & Web**
-
-- Next.js · TypeScript  
-- TailwindCSS + shadcn/ui + 21st.dev components  
-- Supabase (Auth · Postgres · Storage)
-
-**Automation & AI**
-
-- Python for scripts, scraping, and glue code  
-- AI copilots in VS Code / Cursor (vibe‑coding workflow)  
-- Prompt-driven scaffolds for SaaS modules (dashboards, tables, forms, the usual suspects)
-
-**Ops & Collaboration**
-
-- GitHub for repos and issues  
-- Notion / Google Docs for specs and half‑baked ideas  
-- Simple kanban instead of 47 different PM tools
-
----
-
-## Currently Exploring
-
-- Making AI agents actually useful inside real repos, not just demo apps.  
-- How to give small teams “enterprise” dashboards without making them feel like enterprise tools.  
-- Better patterns for multi‑tenant SaaS (agencies, workspaces, clients, brands) that don’t turn into a spaghetti ERD.  
-- The philosophical question: *if Fuecoco had a SaaS startup, what would it ship?*
-
----
-
-## Selected Projects
-
-- **SMMS – Social Media Management SaaS**  
-  Multi‑tenant, agency-focused platform with scheduling, approvals, analytics, and notifications.
-
-- **Robotics / Control Work**  
-  Experience building physical systems that can’t just “refresh the page” when something goes wrong.
-
-- **UI/UX & Component Experiments**  
-  Integrating modern component libraries (21st.dev, Uiverse, etc.) into clean SaaS dashboards and internal tools.
-
----
-
-## Fun Fact
-
-I don’t just build products — I build systems that build products.  
-Think of me as if Fuecoco got really into TypeScript and automation instead of just napping on the battlefield.
+- Turtles. Watching them, reading about them, defending them in arguments. A 100-year-old tortoise has better uptime than most production systems.
+- Fuecoco is the correct starter. This is not up for discussion.
